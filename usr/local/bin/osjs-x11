@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# OS.js X11 Launcher (Built-in login manager)
+#
+LAUNCHER="/usr/local/bin/osjs-launcher"
+
+xinit /usr/local/lib/osjs.xinitrc -- /usr/bin/X11/X $LAUNCHER

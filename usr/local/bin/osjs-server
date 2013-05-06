@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# OS.js Daemon launcher
+#
+EXEC="/opt/OS.js/server-sys.js"
+
+node $EXEC

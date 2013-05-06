@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# OS.js Client launcher
+#
+EXEC="/opt/OS.js/client.js"
+PORT=3000
+USER=`whoami`
+LAUNCHER="/usr/local/bin/osjs-launcher"
+
+nohup node $EXEC $PORT $USER >/dev/null 2>&1 &
+sleep 3
+exec $LAUNCHER
