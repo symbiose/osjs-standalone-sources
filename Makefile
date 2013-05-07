@@ -25,8 +25,7 @@ slim:
 
 system_wide:
 	cp etc/init.d/osjs /etc/init.d/
-	[[ -f /usr/sbin/update-rc.d ]] && update-rc.d osjs defaults 98
-	[[ -f /usr/sbin/rc-update ]] && rc-update add osjs default
+	./install-daemon.sh install
 
 uninstall:
 	rm -rf /usr/local/bin/osjs*
@@ -35,5 +34,4 @@ uninstall:
 	rm -rf /usr/local/share/doc/osjs
 	rm -rf /usr/share/slim/themes/osjs
 	make -C opt/launcher-sources uninstall
-	[[ -f /usr/sbin/update-rc.d ]] && update-rc.d osjs remove
-	[[ -f /usr/sbin/rc-update ]] && rc-update remove osjs
+	./install-daemon.sh uninstall
