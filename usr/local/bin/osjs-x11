@@ -6,6 +6,5 @@
 # Released under the 2-clause BSD license.
 #
 
-LAUNCHER="/usr/local/bin/osjs-launcher"
+xinit /usr/local/lib/osjs.xinitrc -- /usr/bin/X11/X -br
 
-xinit /usr/local/lib/osjs.xinitrc -- /usr/bin/X11/X $LAUNCHER

@@ -8,7 +8,7 @@
 
 pidfile="/var/run/osjs"
 cwd="/usr/local/bin"
-command="osjs-server"
+command="osjs-daemon"
 user="osjs"
 
 depend()
