@@ -22,8 +22,6 @@ elif [ "$1" == "install" ]; then
     cp etc/init.d/osjs-gentoo /etc/init.d/osjs
     rc-update add osjs default
   fi
-
-  cp etc/init.d/osjs /etc/init.d/
 fi
 
 exit 0
