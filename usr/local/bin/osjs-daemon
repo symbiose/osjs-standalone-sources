@@ -6,7 +6,8 @@
 # Released under the 2-clause BSD license.
 #
 
-EXEC="/opt/OS.js/server-sys.js"
+#EXEC="/opt/OS.js/server-sys.js"
+EXEC="/opt/OS.js/server-web.js"
 LAUNCHER="/usr/local/bin/osjs-x11"
 
 nohup node $EXEC >/dev/null 2>&1 &
