@@ -21,10 +21,14 @@ clean:
 
 slim:
 	mkdir -p /usr/share/slim/themes
+	cp etc/slim.conf /etc/
 	cp -Rf usr/share/themes/osjs /usr/share/slim/themes/
 
 system_wide:
 	./install-daemon.sh install
+
+virtualbox:
+	cp etc/X11/xorg.conf /etc/X11/xorg.conf
 
 uninstall:
 	rm -rf /usr/local/bin/osjs*

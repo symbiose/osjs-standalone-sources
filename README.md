@@ -1,6 +1,8 @@
 # OS.js X11 Standalone package source
-This is Work in Progress! Currently compatible with Ubuntu and Gentoo.
-Need to write documentation for this...
+This repository contains the sources required to install OS.js as a standalone
+Linux distrubution with X11.
 
-## Compability
-Only tested in VirtualBox so far
+This is a work in progress, but currently works on Ubuntu and Gentoo (tested with VirtualBox)
+
+# Installation
+See the `INSTALL.md` file
