@@ -24,13 +24,11 @@ slim:
 	cp -Rf usr/share/themes/osjs /usr/share/slim/themes/
 
 system_wide:
-	cp etc/init.d/osjs /etc/init.d/
 	./install-daemon.sh install
 
 uninstall:
 	rm -rf /usr/local/bin/osjs*
 	rm -rf /usr/local/lib/osjs*
-	rm -rf /etc/init.d/osjs
 	rm -rf /usr/local/share/doc/osjs
 	rm -rf /usr/share/slim/themes/osjs
 	make -C opt/launcher-sources uninstall
