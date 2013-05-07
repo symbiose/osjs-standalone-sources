@@ -14,7 +14,6 @@ install:
 	mkdir -p /usr/local/share/doc/osjs
 	cp -Rf usr/local/bin/osjs* /usr/local/bin/
 	cp -Rf usr/local/lib/osjs* /usr/local/lib/
-	cp etc/init.d/osjs /etc/init.d/
 	make -C opt/launcher-sources install
 
 clean:
@@ -25,7 +24,7 @@ slim:
 	cp -Rf usr/share/themes/osjs /usr/share/slim/themes/
 
 system_wide:
-	cp -Rf 
+	cp etc/init.d/osjs /etc/init.d/
 	update-rc.d osjs defaults 98
 
 uninstall:
