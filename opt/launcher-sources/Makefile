@@ -1,3 +1,10 @@
+#
+# Makefile for OS.js X11 Launcher
+#
+# Copyright (c) 2013 Anders Evenrud <andersevenrud@gmail.com>
+# Released under the 2-clause BSD license.
+#
+
 CC = gcc
 LCFLAGS = -I.
 CFLAGS = $(shell pkg-config --cflags gtk+-3.0 webkitgtk-3.0 glib-2.0)
@@ -15,3 +22,6 @@ clean:
 
 install:
 	cp -f session-launch /usr/local/bin/osjs-launcher
+
+uninstall:
+	rm -rm /usr/local/bin/osjs-launcher

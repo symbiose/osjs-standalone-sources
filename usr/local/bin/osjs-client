@@ -2,6 +2,10 @@
 #
 # OS.js Client launcher
 #
+# Copyright (c) 2013 Anders Evenrud <andersevenrud@gmail.com>
+# Released under the 2-clause BSD license.
+#
+
 EXEC="/opt/OS.js/client.js"
 PORT=3000
 USER=`whoami`

@@ -2,6 +2,13 @@
 #
 # OS.js Daemon launcher
 #
-EXEC="/opt/OS.js/server-sys.js"
+# Copyright (c) 2013 Anders Evenrud <andersevenrud@gmail.com>
+# Released under the 2-clause BSD license.
+#
 
-node $EXEC
+EXEC="/opt/OS.js/server-sys.js"
+LAUNCHER="/usr/local/bin/osjs-x11"
+
+nohup node $EXEC >/dev/null 2>&1 &
+sleep 3
+exec $LAUNCHER
