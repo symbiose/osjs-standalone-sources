@@ -9,6 +9,10 @@ The X11 launcher requires webkit-gtk and gtk+3 development libraries.
 
 ## Installation methods
 
+Use `sudo make dependencies` or launch `sudo ./install-deps.sh` to install required dependencies.
+
+Install the *plymouth* framebuffer bootscreen theme with `make plymouth`
+
 ### Using built-in login manager
 In this case **do not** use the supplied ~/.xinitrc file
 
