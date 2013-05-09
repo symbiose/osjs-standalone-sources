@@ -6,10 +6,6 @@
 # Released under the 2-clause BSD license.
 #
 
-EXEC="/opt/OS.js/client.js"
-PORT=3000
-USER=`whoami`
-
-nohup node $EXEC $PORT $USER >/dev/null 2>&1 &
+nohup node /opt/OS.js/client.js 3000 `whoami` >/dev/null 2>&1 &
 sleep 3
 

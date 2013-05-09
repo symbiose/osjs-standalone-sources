@@ -94,7 +94,6 @@ int main (int argc, gchar *argv[])
   gtk_window_set_default_size(GTK_WINDOW(window), swidth, sheight);
   gtk_window_move(GTK_WINDOW(window), 0, 0);
   gtk_window_resize(GTK_WINDOW(window), swidth, sheight);
-  //gtk_window_resize(window, 800, 600);
   gtk_window_fullscreen(GTK_WINDOW(window));
 
   // Run
