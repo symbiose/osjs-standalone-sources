@@ -8,9 +8,9 @@
 
 if [ -f /usr/bin/apt-get ]; then
   apt-get install xorg xauth xcursor-themes
-  apt-get install alsa-utils pulseaudio pulseaudio-module-x11
+  apt-get install alsa-utils pulseaudio pulseaudio-module-x11 consolekit dbus
   apt-get install libwebkitgtk-3.0 libwebkitgtk-3.0-dev
 elif [ -f /usr/bin/emerge ]; then
-  emerge xorg-server xauth xcursor-themes alsa pulseaudio libwebkitgtk
+  emerge xorg-server xauth xcursor-themes alsa pulseaudio libwebkitgtk consolekit dbus
 fi
 

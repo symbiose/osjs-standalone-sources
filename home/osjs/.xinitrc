@@ -11,5 +11,5 @@ xsetroot -cursor_name left_ptr
 /usr/local/bin/osjs-user-client &
 
 # Launch the X11 Client
-exec /usr/local/bin/osjs-launcher
+exec /usr/bin/dbus-launch /usr/bin/ck-launch-session /usr/local/bin/osjs-launcher
 
