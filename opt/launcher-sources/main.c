@@ -98,7 +98,7 @@ int main (int argc, gchar *argv[])
   gtk_window_fullscreen(GTK_WINDOW(window));
 
   // Run
-  gtk_widget_show_all(GTK_WINDOW(window));
+  gtk_widget_show_all(GTK_WIDGET(window));
   gtk_window_set_resizable(GTK_WINDOW(window), false);
   gtk_main();
 
