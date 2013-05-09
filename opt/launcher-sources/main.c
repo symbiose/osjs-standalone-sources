@@ -76,7 +76,7 @@ int main (int argc, gchar *argv[])
   webkit_web_view_set_settings(WEBKIT_WEB_VIEW(web_view), settings);
   webkit_web_view_load_uri(WEBKIT_WEB_VIEW(web_view), uri);
 
-  g_signal_connect(webView, "close-web-view", G_CALLBACK(closeWebViewCb), GTK_CONTAINER(window));
+  g_signal_connect(web_view, "close-web-view", G_CALLBACK(closeWebViewCb), GTK_CONTAINER(window));
   gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(web_view));
 
   // Fullscreen stuff
